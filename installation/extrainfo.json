@@ -1,0 +1,7 @@
+{
+    "host": "192.168.56.11",
+    "backup_date": "2022-06-28 00:29:40",
+    "akeeba_version": "9.2.6",
+    "php_version": "7.4.28",
+    "root": "\/var\/www\/html\/astroid\/"
+}

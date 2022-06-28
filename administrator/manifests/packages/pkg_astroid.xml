@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.1" method="upgrade">
+   <name>Astroid Package</name>
+   <packagename>astroid</packagename>
+   <packager>JoomDev/TemPlaza</packager>
+   <packagerurl>https://github.com/templaza/astroid-framework</packagerurl>
+   <author>JoomDev/TemPlaza</author>
+   <creationDate>December 2021</creationDate>
+   <version>2.5.11</version>
+   <url>https://www.templaza.com</url>
+   <copyright>Copyright (C) 2021 TemPlaza, JSC. All rights reserved.</copyright>
+   <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+   <authorEmail>info@templaza.com</authorEmail>
+   <authorUrl>https://www.templaza.com</authorUrl>
+   <description></description>
+   <scriptfile>pkg_astroid.php</scriptfile>
+   <files folder="astroid">
+      <folder type="library" id="astroid" client="site">astroid-framework</folder>
+      <folder type="template" id="astroid_template_one" client="site">astroid-template-one</folder>
+      <folder type="template" id="astroid_template_zero" client="site">astroid-template-zero</folder>
+   </files>
+</extension>

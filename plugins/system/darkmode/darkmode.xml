@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>Dark Mode Plugin</name>
+	<author>JoomDev</author>
+	<creationDate>Feb 2020</creationDate>
+	<copyright>Copyright (C) 2009 - 2020 JoomDev. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@joomdev.com</authorEmail>
+	<authorUrl>www.joomdev.com</authorUrl>
+	<version>3.0.0</version>
+	<description>Dark more plugin</description>
+	<files>
+		<filename plugin="darkmode">darkmode.php</filename>
+		<folder>assets</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="position" type="radio" default="right" label="Position" description="" class="btn-group">
+				  <option value="left">Bottom Left</option>
+				  <option value="right">Bottom Right</option>
+				</field>
+				<field name="offsetleft" type="number" default="32" label="Offset from left (in px)" description="" showon="position:left" />
+				<field name="offsetright" type="number" default="32" label="Offset from Right (in px)" description="" showon="position:right" />
+				<field name="offsetfrombottom" type="number" default="64" label="Offset from bottom (in px)" description="" />
+				<field name="transitiontime" type="text" default="0.5" label="Transition time (in seconds)" description="" />
+				<field name="mixColor" type="color" default="#fff" format="rgba" label="Mix Color"	description="" />
+				<field name="backgroundColor" type="color" default="#fff" format="rgba" label="backgroundColor Color)"	description="" />
+				<field name="buttonColorDark" type="color" default="#100f2c" format="rgba" label="Button Color (dark)"	description="" />
+				<field name="buttonColorLight" type="color" default="#fff" format="rgba" label="Button Color (Light)"	description="" />
+				<field name="saveInCookies" type="radio" default="false" label="User selection is saved via cookies" description="" class="btn-group">
+				  <option value="true">JYES</option>
+				  <option value="false">JNO</option>
+				</field>
+				<field name="label" type="text" default="🌓" label="Label for the button (can be emoji)" description="" />
+				<field name="autoMatchOsTheme" type="radio" default="false" label="Automatically match the OS theme" description="" class="btn-group">
+				  <option value="true">JYES</option>
+				  <option value="false">JNO</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="autoenable" type="radio" default="0" label="Automatically Enable Dark Mode" description="" class="btn-group btn-group-yesno">
+				  <option value="1">JYES</option>
+				  <option value="0">JNO</option>
+				</field>
+				<field name="source" type="radio" default="cdn" label="Load Dark Mode Javascript Via" description="" class="btn-group">
+				  <option value="local">local</option>
+				  <option value="cdn">CDN</option>
+				</field>
+				<field name="forcezindex" type="radio" default="0" label="Force the button to display" description="This is useful if the button is either unclickable or you cant see it at all (which probably means that other elements have a higher z-index depth)" class="btn-group">
+				  <option value="1">JYES</option>
+				  <option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
