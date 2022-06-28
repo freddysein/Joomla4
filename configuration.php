@@ -32,8 +32,8 @@ class JConfig {
 	public $offset = 'UTC';
 	public $mailonline = true;
 	public $mailer = 'mail';
-	public $mailfrom = 'info@sein.cl';
-	public $fromname = 'SEIN.CL';
+	public $mailfrom = 'demo@demo.com';
+	public $fromname = 'DEMO SA';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = false;
 	public $smtpuser = '';
